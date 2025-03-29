@@ -14,10 +14,24 @@ export const styles = () =>
         title:{
             fontSize: '72px',
             fontWeight: 'bold',
+            '@media (max-width: 1100px)': {
+                fontSize: '48px',
+                textAlign: 'center',
+            },
+            '@media (max-width: 820px)': {
+                fontSize: '48px',
+                textAlign: 'center',
+            },
         },
         contentContainer:{
             display:'flex',
             justifyContent: 'center',
+            '@media (max-width: 1100px)': {
+                justifyContent: 'space-between',
+            },
+            '@media (max-width: 820px)': {
+                flexDirection: 'column',
+            },
         },
         content:{
             maxWidth: '30%',
@@ -27,6 +41,13 @@ export const styles = () =>
             alignItems: 'center',
             flexDirection: 'column',
             textAlign: 'center',
+            '@media (max-width: 1100px)': {
+                padding: '0 10px 40px',
+            },
+            '@media (max-width: 820px)': {
+                maxWidth: '100%',
+                paddingTop:'40px',
+            },
         },
         contentMiddle:{
             maxWidth: '30%',
@@ -38,6 +59,18 @@ export const styles = () =>
             textAlign: 'center',
             borderLeft: '2px solid black',
             borderRight: '2px solid black',
+
+            '@media (max-width: 1100px)': {
+                padding: '0 10px 40px',
+            },
+            '@media (max-width: 820px)': {
+                maxWidth: '100%',
+                borderTop: '2px solid black',
+                borderBottom: '2px solid black',
+                borderLeft: 'none',
+                borderRight: 'none',
+                padding: '40px 40px 40px',
+            },
         },
         icon:{
             height: '100px',
@@ -47,6 +80,9 @@ export const styles = () =>
             fontSize: '36px',
             fontWeight: '500',
             marginBottom: '20px',
+            '@media (max-width: 1100px)': {
+                fontSize: '30px',
+            },
         },
         elementDescription:{
             fontSize: '22px',

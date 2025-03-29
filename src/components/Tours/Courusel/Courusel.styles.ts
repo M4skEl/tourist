@@ -1,7 +1,11 @@
 import {createStyles} from "@/utils/createStyles";
 
+const imageWidthH = 600
+//const imageHeightH = 450
 const imageWidth = 450
 const imageHeight = 450
+const imageWidthTablet = 300
+//const imageHeightTablet = 300
 
 interface stylesProps {
     images:string[];
@@ -18,6 +22,14 @@ export const styles = (
             height: `${imageHeight}px`,
             maxWidth:`${imageWidth}px`,
             width: `${imageWidth}px`,
+            '@media (max-width: 1100px)': {
+                width: `${imageWidthTablet}px`,
+                maxWidth:`${imageWidthTablet}px`,
+            },
+            '@media (max-width: 820px)': {
+                width: `${imageWidthH}px`,
+                maxWidth:`${imageWidthH}px`,
+            },
         },
         container: {
             display: 'flex',
@@ -27,6 +39,15 @@ export const styles = (
             maxWidth: `${images.length * 100}%`,
             padding: 0,
             margin: 0,
+            '@media (max-width: 1100px)': {
+                transform: `translateX(-${currentIndex * imageWidthTablet}px)`,
+            },
+            '@media (max-width: 820px)': {
+                transform: `translateX(-${currentIndex * imageWidthH}px)`,
+            },
+            '@media (max-width: 768px)': {
+                transform: `none`,
+            },
             //height: '100%'
         },
         imageContainer:{
@@ -38,5 +59,9 @@ export const styles = (
             width: '100%',
             objectFit: 'cover',
             maxWidth:`${imageWidth}px`,
+            '@media (max-width:820px)': {
+                maxWidth:`${imageWidthH}px`,
+                width:`100%`,
+            },
         },
     })

@@ -17,12 +17,25 @@ export const styles = () =>
             display: "flex",
             width: "50%",
             gap:"10px",
+            '@media (max-width: 820px)': {
+                width: '100%',
+            },
         },
         verticalFirst: {
             width: "50%",
             '& img':{
                 height: '430px !important',
                 borderRadius: '15px',
+            },
+        },
+        verticalSecond: {
+            width: "50%",
+            '& img':{
+                height: '430px !important',
+                borderRadius: '15px',
+            },
+            '@media (max-width: 820px)': {
+                display:'none'
             },
 
         },
@@ -157,6 +170,9 @@ export const styles = () =>
                 height: '430px !important',
                 borderRadius: '15px',
             },
+            '@media (max-width: 820px)': {
+                display:'none'
+            },
         },
 
         secondRowContainer: {
@@ -168,17 +184,26 @@ export const styles = () =>
             width: '50%',
             display: 'flex',
             gap:'10px',
+            '@media (max-width: 820px)': {
+                width: '100%',
+            },
         },
         horizontalSecond:{
             width: '50%',
             gap:'10px',
             display: 'flex',
             flexDirection: 'column',
+            '@media (max-width: 820px)': {
+                width: '100%',
+            },
         },
         rightSecond:{
             display: 'flex',
             width: '50%',
             gap:'10px',
+            '@media (max-width: 820px)': {
+                width: '100%',
+            },
         },
 
 

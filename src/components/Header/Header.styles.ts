@@ -20,6 +20,9 @@ export const styles = () =>
             padding: '0 40px',
             backgroundColor: Colors.white,
             zIndex: 999999,
+            '@media (max-width: 768px)': {
+            display: 'none',
+                },
         },
         container: {
             position: 'sticky',
@@ -34,6 +37,9 @@ export const styles = () =>
             borderRadius: '0 0 15px 15px',
             paddingTop:'25px',
             paddingBottom:'10px',
+            '@media (max-width: 1100px)': {
+                paddingTop:'10px',
+            },
 
         },
         navListContainer:{
@@ -43,16 +49,29 @@ export const styles = () =>
             '& nav':{
                 display: 'flex',
                 width:'100%',
+
             }
+        },
+        navigation:{
+            display: 'flex',
+            width:'100%',
+            '@media (max-width: 1100px)': {
+                flexDirection: 'column',
+            },
         },
         navList:{
             display: 'flex',
-            width:'50%',
+            flex: '1 1 50%',
+            //width:'50%',
             justifyContent: 'space-between',
             //border: `2px solid ${Colors.purple}`,
             marginRight:'50px',
             borderRadius: '15px',
             gap:'50px',
+            '@media (max-width: 1100px)': {
+                width:'100%',
+                marginRight:'0',
+            },
 
         },
         listItem:{
@@ -60,6 +79,8 @@ export const styles = () =>
             alignItems: 'center',
             justifyContent: 'center',
             height:'50px',
+
+
             "&:hover":{
                 opacity:0.8,
                 '& div': {
@@ -122,10 +143,12 @@ export const styles = () =>
         },
 
         orderLink:{
-            width: '50%',
+            //width: '50%',
             display:'flex',
             alignItems: 'center',
             justifyContent: 'center',
+
+            flex: '1 1 50%',
 
         },
         orderItem:{

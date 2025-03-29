@@ -53,6 +53,9 @@ export const styles = () =>
             display: 'flex',
             alignItems: 'center',
             flexDirection: 'column',
+            '@media (max-width: 1100px)': {
+                width: '75%',
+            },
 
         },
         description: {

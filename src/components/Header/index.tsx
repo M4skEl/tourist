@@ -16,7 +16,7 @@ const Header = () => {
         listItem,
         linkItem,
         linkText,
-
+        navigation,
         leftTopCorner,
         leftBottomCorner,
         rightTopCorner,
@@ -39,7 +39,7 @@ const Header = () => {
         <Box component={'header'} sx={sectionContainer} id={'catcher'}>
             <Box sx={container}>
                 <Box sx={navListContainer}>
-                    <Box component={'nav'}>
+                    <Box component={'nav'} sx={navigation}>
                         <List sx={navList}>
 
                             <Link href={'/#info'} style={linkItem}>
@@ -89,6 +89,7 @@ const Header = () => {
                                     <Box sx={rightBottomCorner}/>
                                 </ListItem>
                             </Link>
+
                         </List>
                         <Box sx={orderLink}>
                             <a href={'/#booking'} style={orderItem}>

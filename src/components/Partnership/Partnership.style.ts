@@ -29,6 +29,9 @@ export const styles = () =>
             position: 'relative',
             width: '75%',
             Bottom: '40px',
+            '@media (max-width: 1100px)': {
+                width: '100%',
+            },
 
         },
 
@@ -109,11 +112,17 @@ export const styles = () =>
 
         descriptionContainer: {
             padding: '50px 200px',
-
+            '@media (max-width: 1100px)': {
+                padding: '50px 100px',
+            },
         },
         description: {
             fontSize: '32px',
             marginBottom: '20px',
+            '@media (max-width: 1100px)': {
+                fontSize: '24px',
+                fontWeight: '500',
+            },
         },
         listContainer: {
             display: 'flex',

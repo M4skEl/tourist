@@ -10,6 +10,7 @@ const MainPhotos = () => {
         thirdRowContainer,
         leftFirst,
         verticalFirst,
+        verticalSecond,
         horizontalFirst,
         horizontalText,
 
@@ -101,7 +102,7 @@ const MainPhotos = () => {
                             <Box sx={rightBottomCorner}/>
                         </Box>
                     </Box>
-                    <Box sx={verticalFirst}>
+                    <Box sx={verticalSecond}>
                         <Box component={'img'}
                             src={'/Arkh/grin_a.jpg'}
                             alt={'feature'}
@@ -111,7 +112,7 @@ const MainPhotos = () => {
 
                 </Box>
                 <Box sx={rightSecond}>
-                    <Box sx={verticalFirst}>
+                    <Box sx={verticalSecond}>
                         <Box component={'img'}
                             src={'/Arkh/old_house.jpg'}
                             alt={'feature'}

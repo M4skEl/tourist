@@ -5,74 +5,84 @@ export const styles = () =>
     createStyles({
         sectionContainer: {
             width: "100%",
-            paddingTop:"100px",
+            paddingTop: "100px",
             backgroundColor: Colors.green,
-            color:Colors.beige,
-            borderBottom:`2px solid black`,
+            color: Colors.beige,
+            borderBottom: `2px solid black`,
         },
-        titleContainer:{
-            display:"flex",
-            alignItems:"center",
-            justifyContent:"center",
-            margin:'0 40px',
-            marginBottom:'50px',
+        titleContainer: {
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: '0 40px',
+            marginBottom: '50px',
         },
-        title:{
+        title: {
             fontSize: "80px",
             //fontFamily: "'Montserrat', sans-serif",
             fontWeight: '700',
             lineHeight: '80px',
-            marginBottom:'50px',
+            marginBottom: '50px',
         },
 
 
-        contentContainer:{
-            margin:"0 40px",
-            paddingBottom:"50px",
+        contentContainer: {
+            margin: "0 40px",
+            paddingBottom: "50px",
 
         },
-        row:{
-            display:"flex",
-            gap:'40px',
-            width:'100%',
-            marginBottom:'40px',
+        row: {
+            display: "flex",
+            gap: '40px',
+            width: '100%',
+            marginBottom: '40px',
+            '@media (max-width: 820px)': {
+                flexDirection: 'column',
+            },
         },
-        leftContainer:{
-            width:'50%',
-            display:'flex',
-            gap:'20px',
+        leftContainer: {
+            width: '50%',
+            display: 'flex',
+            gap: '20px',
+            '@media (max-width: 820px)': {
+                width: '100%',
+            },
         },
-        imageContainer:{
-            width:'50%',
-            '& img':{
+        imageContainer: {
+            width: '50%',
+            '& img': {
                 height: '450px !important',
                 borderRadius: '15px',
             },
+            '@media (max-width: 820px)': {
+                display: 'flex',
+                alignItems: 'center',
+            },
         },
-        imageStyles:{
+        imageStyles: {
             width: '100%',
             objectFit: 'cover',
-            maxWidth:'450px',
+            maxWidth: '450px',
         },
-        textContainer:{
+        textContainer: {
             width: '50%',
-            display:'flex',
-            flexDirection:'column',
-            justifyContent:'space-between',
-            position:'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            position: 'relative',
 
             //padding:'50px 50px',
             //boxSizing:'border-box',
         },
-        textContentContainer:{
-            padding:'50px 50px',
-            boxSizing:'border-box',
-            height:'100%',
-            display:'flex',
-            flexDirection:'column',
-            justifyContent:'space-between',
+        textContentContainer: {
+            padding: '50px 50px',
+            boxSizing: 'border-box',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
         },
-        leftTopCorner:{
+        leftTopCorner: {
             position: 'absolute',
             top: 0,
             left: 0,
@@ -81,7 +91,7 @@ export const styles = () =>
             borderTop: `10px solid ${Colors.beige}`,
             borderLeft: `10px solid ${Colors.beige}`,
         },
-        leftBottomCorner:{
+        leftBottomCorner: {
             position: 'absolute',
             bottom: 0,
             left: 0,
@@ -90,7 +100,7 @@ export const styles = () =>
             borderBottom: `10px solid ${Colors.beige}`,
             borderLeft: `10px solid ${Colors.beige}`,
         },
-        rightTopCorner:{
+        rightTopCorner: {
             position: 'absolute',
             top: 0,
             right: 0,
@@ -99,7 +109,7 @@ export const styles = () =>
             borderTop: `10px solid ${Colors.beige}`,
             borderRight: `10px solid ${Colors.beige}`,
         },
-        rightBottomCorner:{
+        rightBottomCorner: {
             position: 'absolute',
             bottom: 0,
             right: 0,
@@ -110,7 +120,7 @@ export const styles = () =>
         },
 
 
-        leftTopCornerInside:{
+        leftTopCornerInside: {
             position: 'absolute',
             top: '25px',
             left: '25px',
@@ -119,7 +129,7 @@ export const styles = () =>
             borderTop: `3px solid ${Colors.beige}`,
             borderLeft: `3px solid ${Colors.beige}`,
         },
-        leftBottomCornerInside:{
+        leftBottomCornerInside: {
             position: 'absolute',
             bottom: '25px',
             left: '25px',
@@ -128,7 +138,7 @@ export const styles = () =>
             borderBottom: `3px solid ${Colors.beige}`,
             borderLeft: `3px solid ${Colors.beige}`,
         },
-        rightTopCornerInside:{
+        rightTopCornerInside: {
             position: 'absolute',
             top: '25px',
             right: '25px',
@@ -137,7 +147,7 @@ export const styles = () =>
             borderTop: `3px solid ${Colors.beige}`,
             borderRight: `3px solid ${Colors.beige}`,
         },
-        rightBottomCornerInside:{
+        rightBottomCornerInside: {
             position: 'absolute',
             bottom: '25px',
             right: '25px',
@@ -148,28 +158,28 @@ export const styles = () =>
         },
 
 
-
-
-        textTitle:{
+        textTitle: {
             fontSize: '24px',
 
         },
-        textDescription:{
+        textDescription: {
             fontSize: '18px',
-            opacity:'0.8',
-            marginBottom:'30px',
-            fontWeight:300,
+            opacity: '0.8',
+            marginBottom: '30px',
+            fontWeight: 300,
         },
-        textDescriptionTitle:{
+        textDescriptionTitle: {
             fontSize: '18px',
-            fontWeight:300,
+            fontWeight: 300,
 
         },
-        rightContainer:{
-            width:'50%',
-            display:'flex',
-            gap:'20px',
-
+        rightContainer: {
+            width: '50%',
+            display: 'flex',
+            gap: '20px',
+            '@media (max-width: 820px)': {
+                width: '100%',
+            },
         },
 
 

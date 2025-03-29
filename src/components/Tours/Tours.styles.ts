@@ -3,44 +3,51 @@ import Colors from "@/utils/Colors";
 
 export const styles = () =>
     createStyles({
-        sectionContainer:{
+        sectionContainer: {
             margin: '100px 40px 40px',
             color: Colors.dark,
         },
-        titleContainer:{
+        titleContainer: {
             margin: '0 40px 40px',
             display: 'flex',
             justifyContent: 'center',
 
         },
-        title:{
+        title: {
             fontSize: '72px',
             fontWeight: '700',
         },
-        contentContainer:{
-        },
-        tourContainer:{
+        contentContainer: {},
+        tourContainer: {
             width: '100%',
             display: 'flex',
             gap: '40px',
             marginBottom: '70px',
+            '@media (max-width: 820px)': {
+                flexDirection: 'column',
+            },
         },
 
-        imageContainer:{
+        imageContainer: {
             position: 'relative',
             //width:'30%',
             padding: '40px',
-            '& img':{
+            maxHeight: '530px',
+            '& img': {
                 height: '450px !important',
                 //borderRadius: '15px',
             },
+            '@media (max-width: 820px)': {
+                display: 'flex',
+                justifyContent: 'center',
+            },
         },
-        imageStyles:{
+        imageStyles: {
             maxWidth: '100%',
             objectFit: 'cover'
         },
 
-        leftTopCornerInside:{
+        leftTopCornerInside: {
             position: 'absolute',
             top: '25px',
             left: '25px',
@@ -49,7 +56,7 @@ export const styles = () =>
             borderTop: '3px solid black',
             borderLeft: '3px solid black',
         },
-        leftBottomCornerInside:{
+        leftBottomCornerInside: {
             position: 'absolute',
             bottom: '25px',
             left: '25px',
@@ -58,7 +65,7 @@ export const styles = () =>
             borderBottom: '3px solid black',
             borderLeft: '3px solid black',
         },
-        rightTopCornerInside:{
+        rightTopCornerInside: {
             position: 'absolute',
             top: '25px',
             right: '25px',
@@ -67,7 +74,7 @@ export const styles = () =>
             borderTop: '3px solid black',
             borderRight: '3px solid black',
         },
-        rightBottomCornerInside:{
+        rightBottomCornerInside: {
             position: 'absolute',
             bottom: '25px',
             right: '25px',
@@ -77,7 +84,7 @@ export const styles = () =>
             borderRight: '3px solid black',
         },
 
-        leftTopCorner:{
+        leftTopCorner: {
             position: 'absolute',
             top: 0,
             left: 0,
@@ -86,7 +93,7 @@ export const styles = () =>
             borderTop: '10px solid black',
             borderLeft: '10px solid black',
         },
-        leftBottomCorner:{
+        leftBottomCorner: {
             position: 'absolute',
             bottom: 0,
             left: 0,
@@ -95,7 +102,7 @@ export const styles = () =>
             borderBottom: '10px solid black',
             borderLeft: '10px solid black',
         },
-        rightTopCorner:{
+        rightTopCorner: {
             position: 'absolute',
             top: 0,
             right: 0,
@@ -104,7 +111,7 @@ export const styles = () =>
             borderTop: '10px solid black',
             borderRight: '10px solid black',
         },
-        rightBottomCorner:{
+        rightBottomCorner: {
             position: 'absolute',
             bottom: 0,
             right: 0,
@@ -115,41 +122,37 @@ export const styles = () =>
         },
 
 
-
-
-
-
-        descriptionContainer:{
-          display: 'flex',
-          flexDirection: 'column',
+        descriptionContainer: {
+            display: 'flex',
+            flexDirection: 'column',
             gap: '50px',
         },
-        descriptionTitle:{
+        descriptionTitle: {
             fontSize: '42px',
             fontWeight: '700',
         },
-        descriptionText:{
+        descriptionText: {
             fontSize: '22px',
             paddingRight: '20px',
             fontWeight: '500',
         },
-        listContainer:{
+        listContainer: {
             display: 'flex',
             flexDirection: 'column',
             gap: '0px',
         },
-        listItem:{
+        listItem: {
             display: 'flex',
             alignItems: 'flex-end',
             gap: '10px',
         },
-        listTextBold:{
+        listTextBold: {
             fontSize: '24px',
             fontWeight: '500',
             width: '100%',
             maxWidth: '200px',
         },
-        listText:{
+        listText: {
             fontSize: '22px',
             fontWeight: '300',
 

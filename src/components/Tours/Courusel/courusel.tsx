@@ -41,7 +41,7 @@ const ImageSlider = ({
                         <Box component={'img'}
                             src={image}
                             alt={'feature'}
-                            style={imageStyles}
+                            sx={imageStyles}
                         />
                     </Box>
                 ))}
