@@ -50,8 +50,9 @@ export const styles = () =>
             },
         },
         imageStyles:{
-            maxWidth: '100%',
-            objectFit: 'cover'
+            width: '100%',
+            objectFit: 'cover',
+            maxWidth:'450px',
         },
         textContainer:{
             width: '50%',

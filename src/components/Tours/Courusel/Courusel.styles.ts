@@ -35,7 +35,8 @@ export const styles = (
             padding: 0,
         },
         imageStyles:{
-            maxWidth: '100%',
+            width: '100%',
             objectFit: 'cover',
+            maxWidth:`${imageWidth}px`,
         },
     })

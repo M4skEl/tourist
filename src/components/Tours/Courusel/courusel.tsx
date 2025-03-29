@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {Box} from "@mui/material";
-import Image from "next/image";
 import {styles} from './Courusel.styles'
 
 interface ImageSliderProps {
@@ -39,13 +38,9 @@ const ImageSlider = ({
                         key={index}
                         sx={imageContainer}
                     >
-                        <Image
+                        <Box component={'img'}
                             src={image}
                             alt={'feature'}
-                            priority={true}
-                            layout={'responsive'}
-                            width={450}
-                            height={430}
                             style={imageStyles}
                         />
                     </Box>

@@ -1,6 +1,5 @@
 import {Box, Typography} from "@mui/material";
 import {styles} from "@/components/MainInfo/MainInfo.styles";
-import Image from "next/image";
 
 
 
@@ -46,13 +45,9 @@ const MainInfo = () => {
                 <Box sx={row}>
                     <Box sx={leftContainer}>
                         <Box sx={imageContainer}>
-                            <Image
+                            <Box component={'img'}
                                 src={'/Arkh/two_towers.jpg'}
                                 alt={'feature'}
-                                priority={true}
-                                layout={'responsive'}
-                                width={450}
-                                height={430}
                                 style={imageStyles}
                             />
                         </Box>
@@ -83,13 +78,9 @@ const MainInfo = () => {
                     </Box>
                     <Box sx={rightContainer}>
                         <Box sx={imageContainer}>
-                            <Image
+                            <Box component={'img'}
                                 src={'/Arkh/first_bus.jpg'}
                                 alt={'feature'}
-                                priority={true}
-                                layout={'responsive'}
-                                width={450}
-                                height={430}
                                 style={imageStyles}
                             />
                         </Box>
@@ -144,13 +135,9 @@ const MainInfo = () => {
                             <Box sx={rightBottomCorner}/>
                         </Box>
                         <Box sx={imageContainer}>
-                            <Image
+                            <Box component={'img'}
                                 src={'/Arkh/ships.jpg'}
                                 alt={'feature'}
-                                priority={true}
-                                layout={'responsive'}
-                                width={450}
-                                height={430}
                                 style={imageStyles}
                             />
                         </Box>
@@ -181,13 +168,9 @@ const MainInfo = () => {
                             <Box sx={rightBottomCorner}/>
                         </Box>
                         <Box sx={imageContainer}>
-                            <Image
+                            <Box component={'img'}
                                 src={'/Arkh/old_chumb.webp'}
                                 alt={'feature'}
-                                priority={true}
-                                layout={'responsive'}
-                                width={450}
-                                height={430}
                                 style={imageStyles}
                             />
                         </Box>
