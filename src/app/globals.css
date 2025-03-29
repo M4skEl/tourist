@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+
+body {
+  margin: 0;
+
+  font-family: var(--font-montserrat);
+
+}
+
+.MuiTypography-root{
+  font-family: var(--font-montserrat)  !important;
+}
+
+.application{
+  box-shadow: none;
+}
+
+
+
+
+
