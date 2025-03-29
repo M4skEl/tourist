@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import {Typography, Box, List, ListItem} from '@mui/material'
+import {Typography, Box} from '@mui/material'
 import {styles} from "@/components/Additions/Additions.styles";
 
 const Additions = () => {

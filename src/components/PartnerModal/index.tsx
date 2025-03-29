@@ -1,6 +1,6 @@
 'use client'
-import React, {useEffect, useState} from 'react'
-import {Typography, Box, List, ListItem, Button} from '@mui/material'
+import React, { useState} from 'react'
+import {Typography, Box, Button} from '@mui/material'
 import {styles} from "@/components/PartnerModal/PartnerModal.styles";
 import useOutsideClick from "@/utils/useOutsideClick";
 

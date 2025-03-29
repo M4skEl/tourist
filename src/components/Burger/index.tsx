@@ -1,6 +1,6 @@
 
 
-export const Burger = (setShowBurgerMenu:any)=>{
+export const Burger = (setShowBurgerMenu:()=>void)=>{
 
     return(<>
         {setShowBurgerMenu}

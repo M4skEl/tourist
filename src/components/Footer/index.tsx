@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
-import {Typography, Box, List, ListItem} from '@mui/material'
+import {Typography, Box} from '@mui/material'
 import {styles} from "@/components/Footer/Footer.styles";
-import Link from "next/link";
 
 const Footer = () => {
 
@@ -11,7 +10,6 @@ const Footer = () => {
         sectionContainer,
         contentContainer,
 
-        socialsContainer,
         socialLink,
         socialLinkImg,
 
@@ -19,14 +17,7 @@ const Footer = () => {
         title,
         description,
 
-
-        firstRow,
-        secondRow,
         linksContainer,
-        link,
-        linkText,
-
-        GovermentContainer,
         govermentDescription,
     } = styles()
 

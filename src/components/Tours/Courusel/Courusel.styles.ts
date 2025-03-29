@@ -1,5 +1,4 @@
 import {createStyles} from "@/utils/createStyles";
-import Colors from "@/utils/Colors";
 
 const imageWidth = 450
 const imageHeight = 450

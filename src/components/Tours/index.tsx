@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
-import {Typography, Box, List, ListItem} from '@mui/material'
+import {Typography, Box} from '@mui/material'
 import {styles} from "@/components/Tours/Tours.styles";
-import Image from "next/image";
 import ImageSlider from "@/components/Tours/Courusel/courusel";
 
 
@@ -16,8 +15,6 @@ const Header = () => {
         contentContainer,
         imageContainer,
         tourContainer,
-        imageStyles,
-
         leftTopCorner,
         leftBottomCorner,
         rightTopCorner,

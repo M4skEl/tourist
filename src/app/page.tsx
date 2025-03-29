@@ -1,5 +1,3 @@
-
-import {Box} from "@mui/material";
 import BukzaWidget from "@/components/BukzaWidjet";
 import Header from "@/components/Header";
 import MainPhotos from "@/components/MainPhotos";

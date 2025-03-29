@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import {Typography, Box, List, ListItem, Button} from '@mui/material'
+import {Typography, Box, Button} from '@mui/material'
 import {styles} from "@/components/Partnership/Partnership.style";
 import {PartnerModal} from "@/components/PartnerModal";
 
