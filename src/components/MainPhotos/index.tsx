@@ -1,6 +1,5 @@
 import {Box, Typography} from "@mui/material";
 import {styles} from "@/components/MainPhotos/MainPhotos.styles";
-import Image from "next/image";
 
 const MainPhotos = () => {
 
