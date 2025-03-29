@@ -40,25 +40,17 @@ const MainPhotos = () => {
             <Box sx={firstRowContainer}>
                 <Box sx={leftFirst}>
                     <Box sx={verticalFirst}>
-                        <Image
+                        <Box component={'img'}
                             src={'/Arkh/980654.jpg'}
                             alt={'feature'}
-                            priority={true}
-                            layout={'responsive'}
-                            width={450}
-                            height={430}
                             style={imageStyles}
                         />
                     </Box>
                     <Box sx={horizontalFirst}>
                         <Box sx={horizontalFirstImg}>
-                            <Image
+                            <Box component={'img'}
                                 src={'/Arkh/tramHor.jpg'}
                                 alt={'feature'}
-                                priority={true}
-                                layout={'responsive'}
-                                width={450}
-                                height={210}
                                 style={imageStyles}
                             />
                         </Box>
@@ -78,14 +70,11 @@ const MainPhotos = () => {
                     </Box>
                 </Box>
                 <Box sx={rightFirst}>
-                    <Image
+                    <Box component={'img'}
                         src={'/Arkh/oldArkh1.jpg'}
                         alt={'feature'}
-                        priority={true}
-                        layout={'responsive'}
-                        width={600}
-                        height={430}
-                        style={{ maxWidth: '100%',}}
+                        style={{ maxWidth: '100%',
+                        width: '100%',}}
                     />
                 </Box>
             </Box>
@@ -93,13 +82,9 @@ const MainPhotos = () => {
                 <Box sx={leftSecond}>
                     <Box sx={horizontalSecond}>
                         <Box sx={horizontalFirstImg}>
-                            <Image
+                            <Box component={'img'}
                                 src={'/Arkh/oldcity.jpg'}
                                 alt={'feature'}
-                                priority={true}
-                                layout={'responsive'}
-                                width={430}
-                                height={210}
                                 style={imageStyles}
                             />
                         </Box>
@@ -118,13 +103,9 @@ const MainPhotos = () => {
                         </Box>
                     </Box>
                     <Box sx={verticalFirst}>
-                        <Image
+                        <Box component={'img'}
                             src={'/Arkh/grin_a.jpg'}
                             alt={'feature'}
-                            priority={true}
-                            layout={'responsive'}
-                            width={450}
-                            height={430}
                             style={imageStyles}
                         />
                     </Box>
@@ -132,13 +113,9 @@ const MainPhotos = () => {
                 </Box>
                 <Box sx={rightSecond}>
                     <Box sx={verticalFirst}>
-                        <Image
+                        <Box component={'img'}
                             src={'/Arkh/old_house.jpg'}
                             alt={'feature'}
-                            priority={true}
-                            layout={'responsive'}
-                            width={450}
-                            height={430}
                             style={imageStyles}
                         />
                     </Box>
@@ -157,13 +134,9 @@ const MainPhotos = () => {
                             <Box sx={rightBottomCorner}/>
                         </Box>
                         <Box sx={horizontalFirstImg}>
-                            <Image
+                            <Box component={'img'}
                                 src={'/Arkh/first_tram.webp'}
                                 alt={'feature'}
-                                priority={true}
-                                layout={'responsive'}
-                                width={430}
-                                height={210}
                                 style={imageStyles}
                             />
                         </Box>

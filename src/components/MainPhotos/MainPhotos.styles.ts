@@ -27,8 +27,9 @@ export const styles = () =>
 
         },
         imageStyles:{
-            maxWidth: '100%',
-            objectFit: 'cover'
+            width: '100%',
+            objectFit: 'cover',
+            maxWidth:'450px',
         },
         horizontalFirst: {
             width: '50%',
