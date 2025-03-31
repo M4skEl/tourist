@@ -14,8 +14,11 @@ export const styles = () =>
 
         },
         title: {
-            fontSize: '72px',
+            fontSize: '70px',
             fontWeight: '700',
+            '@media (max-width: 768px)': {
+                fontSize: '48px',
+            },
         },
         contentContainer: {},
         tourContainer: {
@@ -23,6 +26,7 @@ export const styles = () =>
             display: 'flex',
             gap: '40px',
             marginBottom: '70px',
+            alignItems: 'center',
             '@media (max-width: 820px)': {
                 flexDirection: 'column',
             },
@@ -126,15 +130,18 @@ export const styles = () =>
             display: 'flex',
             flexDirection: 'column',
             gap: '50px',
+
         },
         descriptionTitle: {
             fontSize: '42px',
             fontWeight: '700',
         },
         descriptionText: {
+            textIndent: '2rem',
             fontSize: '22px',
             paddingRight: '20px',
-            fontWeight: '500',
+            fontWeight: '300',
+            marginBottom: '20px',
         },
         listContainer: {
             display: 'flex',

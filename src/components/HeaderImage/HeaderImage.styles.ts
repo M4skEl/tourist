@@ -24,6 +24,9 @@ export const styles = () =>
         },
         image: {
             height: '400px',
+            '@media (max-width: 510px)': {
+                height: '300px',
+            },
         },
         descriptionContainer:{
             display: 'flex',
@@ -33,6 +36,12 @@ export const styles = () =>
         title:{
             fontSize: '70px',
             fontWeight: '700',
+            '@media (max-width: 768px)': {
+                fontSize: '48px',
+            },
+            '@media (max-width: 500px)': {
+                fontSize: '36px',
+            },
         },
         description:{
             fontSize: '24px',
@@ -40,5 +49,12 @@ export const styles = () =>
             margin: '0',
             lineHeight: '28px',
             color: Colors.white,
+            '@media (max-width: 768px)': {
+                fontSize: '20px',
+                lineHeight: '24px',
+            },
+            '@media (max-width: 500px)': {
+                fontSize: '18px',
+            },
         },
     })

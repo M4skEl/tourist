@@ -13,9 +13,13 @@ export const styles = () =>
             justifyContent:"center",
         },
         title:{
-            fontSize: '72px',
+            fontSize: '70px',
             fontWeight: 700,
             margin: '0 auto',
+            '@media (max-width: 768px)': {
+                fontSize: '48px',
+                margin: '0 40px',
+            },
         },
         background:{
             backgroundColor: Colors.green,

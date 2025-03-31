@@ -19,8 +19,11 @@ export const styles = () =>
 
         },
         title: {
-            fontSize: '72px',
-            fontWeight: 'bold',
+            fontSize: '70px',
+            fontWeight: 700,
+            '@media (max-width: 768px)': {
+                fontSize: '48px',
+            },
         },
         contentContainer: {
             display: 'flex',
@@ -115,6 +118,11 @@ export const styles = () =>
             '@media (max-width: 1100px)': {
                 padding: '50px 100px',
             },
+            '@media (max-width: 768px)': {
+                padding: '50px 70px',
+            },
+
+
         },
         description: {
             fontSize: '32px',
@@ -122,6 +130,9 @@ export const styles = () =>
             '@media (max-width: 1100px)': {
                 fontSize: '24px',
                 fontWeight: '500',
+            },
+            '@media (max-width: 768px)': {
+                fontWeight: '300',
             },
         },
         listContainer: {
@@ -141,6 +152,14 @@ export const styles = () =>
                 backgroundColor: Colors.white,
                 borderRadius: '50%',
                 marginRight: '10px',
+                minWidth: '10px',
+                minHeight: '10px',
+            },
+            '@media (max-width: 768px)': {
+                fontWeight: '300',
+            },
+            '@media (max-width: 500px)': {
+                fontSize: '18px',
             },
         },
         bottomBlock:{
@@ -166,8 +185,14 @@ export const styles = () =>
             "&:hover": {
                 //backgroundColor: 'white',
                 //padding: '15px',
-                fontSize: '48px',
+                fontSize: '38px',
                 //opacity: 0.8,
+            },
+            '@media (max-width: 768px)': {
+                fontSize: '28px'
+            },
+            '@media (max-width: 500px)': {
+                fontSize: '22px',
             },
         },
 
@@ -179,6 +204,12 @@ export const styles = () =>
             height: '25px',
             borderTop: `5px solid ${Colors.white}`,
             borderLeft: `5px solid ${Colors.white}`,
+            '@media (max-width: 500px)': {
+                width: '15px',
+                height: '15px',
+                borderTop: `3px solid ${Colors.white}`,
+                borderLeft: `3px solid ${Colors.white}`,
+            },
         },
         leftBottomCornerButton: {
             position: 'absolute',
@@ -188,6 +219,12 @@ export const styles = () =>
             height: '25px',
             borderBottom: `5px solid ${Colors.white}`,
             borderLeft: `5px solid ${Colors.white}`,
+            '@media (max-width: 500px)': {
+                width: '15px',
+                height: '15px',
+                borderBottom: `3px solid ${Colors.white}`,
+                borderLeft: `3px solid ${Colors.white}`,
+            },
         },
         rightTopCornerButton: {
             position: 'absolute',
@@ -197,6 +234,12 @@ export const styles = () =>
             height: '25px',
             borderTop: `5px solid ${Colors.white}`,
             borderRight: `5px solid ${Colors.white}`,
+            '@media (max-width: 500px)': {
+                width: '15px',
+                height: '15px',
+                borderTop: `3px solid ${Colors.white}`,
+                borderRight: `3px solid ${Colors.white}`,
+            },
         },
         rightBottomCornerButton: {
             position: 'absolute',
@@ -206,6 +249,12 @@ export const styles = () =>
             height: '25px',
             borderBottom: `5px solid ${Colors.white}`,
             borderRight: `5px solid ${Colors.white}`,
+            '@media (max-width: 500px)': {
+                width: '15px',
+                height: '15px',
+                borderBottom: `3px solid ${Colors.white}`,
+                borderRight: `3px solid ${Colors.white}`,
+            },
         },
 
 

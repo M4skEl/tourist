@@ -62,19 +62,23 @@ const Partnership = () => {
                 <Box sx={leftBottomCornerInside}/>
                 <Box sx={descriptionContainer}>
                     <Box sx={description}>
-                        {'Мы готовы к сотрудничеству с туроператарами, отелями, гостиницами, кафе и ресторанами, ' +
-                            'а также с любыми другими партнерами:'}
+                        {'Мы готовы к сотрудничеству со всеми, кому не безразличны история\n' +
+                            'Архангельска и её популяризация в широких массах. Готовы к\n' +
+                            'предложениям:\n'}
                     </Box>
                     <Box sx={bottomBlock}>
                     <Box sx={listContainer}>
                         <Typography sx={listItem}>
-                            {'Совместные проекты'}
+                            {'Разработка совместных проектов'}
                         </Typography>
                         <Typography sx={listItem}>
-                            {'Корпоративные проекты'}
+                            {'Разработка проектов под заказ'}
                         </Typography>
                         <Typography sx={listItem}>
-                            {'Многое другое'}
+                            {'Включение маршрутов в программы ваших мероприятий'}
+                        </Typography>
+                        <Typography sx={listItem}>
+                            {'Многое другое…'}
                         </Typography>
                     </Box>
                     </Box>

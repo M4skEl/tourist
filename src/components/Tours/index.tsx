@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import {Typography, Box} from '@mui/material'
 import {styles} from "@/components/Tours/Tours.styles";
@@ -39,7 +38,7 @@ const Header = () => {
         <Box component={'section'} sx={sectionContainer} id={'tours'}>
             <Box sx={titleContainer}>
                 <Typography sx={title}>
-                    {'Наши путевки'}
+                    {'Наши путешествия в прошлое'}
                 </Typography>
             </Box>
             <Box sx={contentContainer}>
@@ -77,15 +76,27 @@ const Header = () => {
                     </Box>
 
 
-
-
                     <Box sx={descriptionContainer}>
                         <Typography sx={descriptionTitle}>
                             {'От вокзала до вокзала'}
                         </Typography>
-                        <Typography sx={descriptionText}>
-                            {'История развернется мужду двумя вокзалами Архангельска. Вы погрузиться в 80 годы прошлого века, узнаете про жизнь города.'}
-                        </Typography>
+                        <Box>
+                            <Typography sx={descriptionText}>
+                                {'История развернётся в 1980-е годы на пути между железно-дорожным\n' +
+                                    'и морским-речным вокзалом города Архангельска. Раньше такой маршрут\n' +
+                                    'превращал Архангельск в транзитный город, через который можно было\n' +
+                                    'отправиться дальше.\n'}
+                            </Typography>
+                            <Typography sx={descriptionText}>
+                                {'В путешествии вы сможете почувствовать себя гостем, проезжающим\n' +
+                                    'город. Вашим спутником будет коренной архангелогородец, который\n' +
+                                    'расскажет как про историю города в целом, так и про его жизнь в 80-е годы.\n'}</Typography>
+                            <Typography sx={descriptionText}>
+                                {
+                                    'Данный маршрут подходит для первого знакомства с Архангельском и\n' +
+                                    'может называться «обзорным», так как даёт общие основные знания.'}
+                            </Typography>
+                        </Box>
                         <Box sx={listContainer}>
 
                             <Box sx={listItem}>
@@ -120,7 +131,7 @@ const Header = () => {
                                     {'Стоимость'}
                                 </Typography>
                                 <Typography sx={listText}>
-                                    {'от 3000 ₽ за экскурсию'}
+                                    {'от 5000 ₽ за экскурсию'}
                                 </Typography>
                             </Box>
                         </Box>
@@ -145,9 +156,8 @@ const Header = () => {
                                 '/Arkh/old_chumb.webp',
                                 '/Arkh/old_chumb.webp',
                                 '/Arkh/old_chumb.webp',
-                            ]}
-                            slideInterval={20000}
-                        />
+                            ]}/>
+
                         <Box sx={rightTopCornerInside}/>
                         <Box sx={rightBottomCornerInside}/>
                         <Box sx={rightTopCorner}/>
@@ -155,14 +165,27 @@ const Header = () => {
                     </Box>
 
 
-
                     <Box sx={descriptionContainer}>
                         <Typography sx={descriptionTitle}>
-                            {'От вокзала до вокзала'}
+                            {'«Репортаж 1984'}
                         </Typography>
-                        <Typography sx={descriptionText}>
-                            {'История развернется мужду двумя вокзалами Архангельска. Вы погрузиться в 80 годы прошлого века, узнаете про жизнь города.'}
-                        </Typography>
+                        <Box>
+                            <Typography sx={descriptionText}>
+                                {'История разворачивается в год 400-летнего юбилея Архангельска. К\n' +
+                                    'этому времени образ города сильно преобразился за счёт масштабного\n' +
+                                    'строительства. Эти изменения были широко представлены благодаря работе\n' +
+                                    'советских журналистов, публицистов и исследователей. '}
+                            </Typography>
+                            <Typography sx={descriptionText}>
+                                {'В путешествии вы окажитесь в роли корреспондентов одного из\n' +
+                                    'советских изданий. Персонажем-спутником будет сотрудник\n' +
+                                    'Главархнгельскостроя, который расскажет об изменениях архитектурного\n' +
+                                    'облика Архангельска.'}</Typography>
+                            <Typography sx={descriptionText}>
+                                {'Данный маршрут делает больший акцент на знакомстве с архитектурой\n' +
+                                    'советского периода.'}
+                            </Typography>
+                        </Box>
                         <Box sx={listContainer}>
 
                             <Box sx={listItem}>
@@ -197,7 +220,7 @@ const Header = () => {
                                     {'Стоимость'}
                                 </Typography>
                                 <Typography sx={listText}>
-                                    {'от 3000 ₽ за экскурсию'}
+                                    {'от 5000 ₽ за экскурсию'}
                                 </Typography>
                             </Box>
                         </Box>

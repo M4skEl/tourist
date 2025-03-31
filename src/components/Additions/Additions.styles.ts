@@ -12,7 +12,7 @@ export const styles = () =>
 
         },
         title:{
-            fontSize: '72px',
+            fontSize: '70px',
             fontWeight: 'bold',
             '@media (max-width: 1100px)': {
                 fontSize: '48px',

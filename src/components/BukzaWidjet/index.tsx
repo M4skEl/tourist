@@ -33,7 +33,9 @@ export default function BukzaWidget() {
                 <Typography component="span" sx={title}>{'Онлайн запись'}</Typography>
             </Box>
             <Box sx={background}/>
+            <Box sx={{margin:'0 40px', background:'transparent'}}>
             <div id="BukzaContainer32612"></div>
+            </Box>
         </Box>
     )
 

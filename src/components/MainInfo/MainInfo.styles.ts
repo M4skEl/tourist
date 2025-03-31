@@ -9,6 +9,9 @@ export const styles = () =>
             backgroundColor: Colors.green,
             color: Colors.beige,
             borderBottom: `2px solid black`,
+            '@media (max-width: 600px)': {
+                paddingTop: "20px",
+            },
         },
         titleContainer: {
             display: "flex",
@@ -18,11 +21,15 @@ export const styles = () =>
             marginBottom: '50px',
         },
         title: {
-            fontSize: "80px",
+            fontSize: "70px",
             //fontFamily: "'Montserrat', sans-serif",
             fontWeight: '700',
             lineHeight: '80px',
             marginBottom: '50px',
+            '@media (max-width: 768px)': {
+                fontSize: '48px',
+                marginBottom: '0',
+            },
         },
 
 
@@ -47,9 +54,15 @@ export const styles = () =>
             '@media (max-width: 820px)': {
                 width: '100%',
             },
+            '@media (max-width: 600px)': {
+                flexDirection: 'column',
+                alignItems: 'center',
+            },
         },
         imageContainer: {
             width: '50%',
+            display: 'flex',
+            alignItems: 'center',
             '& img': {
                 height: '450px !important',
                 borderRadius: '15px',
@@ -57,6 +70,10 @@ export const styles = () =>
             '@media (max-width: 820px)': {
                 display: 'flex',
                 alignItems: 'center',
+            },
+            '@media (max-width: 600px)': {
+                width: '100%',
+                justifyContent: 'center',
             },
         },
         imageStyles: {
@@ -73,6 +90,9 @@ export const styles = () =>
 
             //padding:'50px 50px',
             //boxSizing:'border-box',
+            '@media (max-width: 600px)': {
+                width: '100%',
+            },
         },
         textContentContainer: {
             padding: '50px 50px',
@@ -159,8 +179,8 @@ export const styles = () =>
 
 
         textTitle: {
-            fontSize: '24px',
-
+            fontSize: '30px',
+            fontWeight: '500',
         },
         textDescription: {
             fontSize: '18px',
@@ -179,6 +199,30 @@ export const styles = () =>
             gap: '20px',
             '@media (max-width: 820px)': {
                 width: '100%',
+            },
+            '@media (max-width: 600px)': {
+                flexDirection: 'column',
+                alignItems: 'center',
+            },
+        },
+        secondRowContainerReverse:{
+            display: "flex",
+            gap: '40px',
+            width: '100%',
+            marginBottom: '40px',
+            '@media (max-width: 820px)': {
+                flexDirection: 'column',
+            },
+            '@media (max-width: 600px)': {
+                display:'none',
+            },
+        },
+        secondRowContainerStraight:{
+            display:'none',
+            '@media (max-width: 600px)': {
+                display:'flex',
+                flexDirection: 'column',
+                gap:'40px',
             },
         },
 

@@ -48,7 +48,7 @@ const Header = () => {
                                     <Box sx={leftBottomCorner}/>
 
                                     <Typography component={'span'} sx={linkText}>
-                                        {'Почему мы'}
+                                        {'Почему мы?'}
                                     </Typography>
 
                                     <Box sx={rightTopCorner}/>
@@ -61,24 +61,24 @@ const Header = () => {
                                     <Box sx={leftTopCorner}/>
                                     <Box sx={leftBottomCorner}/>
                                     <Typography component={'span'} sx={linkText}>
-                                        {'Путевки'}
+                                        {'Маршруты'}
                                     </Typography>
                                     <Box sx={rightTopCorner}/>
                                     <Box sx={rightBottomCorner}/>
                                 </ListItem>
                             </Link>
-                            { <Link href={'/#photos'} style={linkItem}>
+                            { <Link href={'/#partnership'} style={linkItem}>
                                 <ListItem sx={listItem}>
                                     <Box sx={leftTopCorner}/>
                                     <Box sx={leftBottomCorner}/>
                                     <Typography component={'span'} sx={linkText}>
-                                        {'Атмосфера'}
+                                        {'Партнерам'}
                                     </Typography>
                                     <Box sx={rightTopCorner}/>
                                     <Box sx={rightBottomCorner}/>
                                 </ListItem>
                             </Link>}
-                            <Link href={'/#partnership'} style={linkItem}>
+                            <Link href={'/#contacts'} style={linkItem}>
                                 <ListItem sx={listItem}>
                                     <Box sx={leftTopCorner}/>
                                     <Box sx={leftBottomCorner}/>

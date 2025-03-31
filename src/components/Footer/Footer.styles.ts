@@ -17,6 +17,9 @@ export const styles = () =>
             //marginBottom: '40px',
             lineHeight: '70px',
             color: Colors.white,
+            '@media (max-width: 600px)': {
+                fontSize: '32px',
+            },
         },
         contentContainer: {
             display: 'flex',
@@ -34,10 +37,10 @@ export const styles = () =>
         socialsContainer: {
             display: 'flex',
             width: '25%',
-            marginTop: '150px',
+            marginTop: '70px',
             //justifyContent: 'flex-end',
             alignItems: 'flex-end',
-            flexDirection: 'column',
+            //flexDirection: 'column',
         },
         socialLink: {
             marginTop:'70px',
@@ -57,6 +60,7 @@ export const styles = () =>
                 width: '75%',
             },
 
+
         },
         description: {
             fontSize: '22px',
@@ -65,6 +69,9 @@ export const styles = () =>
             fontWeight: 300,
             //marginBottom: '20px',
             //opacity:.8,
+            '@media (max-width: 600px)': {
+                fontSize: '18px',
+            },
         },
 
 
@@ -119,5 +126,27 @@ export const styles = () =>
             fontSize: '12px',
             fontWeight: '300',
             color: Colors.white,
+        },
+
+        contactsContainer:{
+            display: 'flex',
+            gap:'10px',
+            flexDirection: 'column',
+            alignItems: 'center',
+            //marginTop: '70px',
+            //width: '25%',
+            marginTop: '30px',
+        },
+        contactsRow:{
+            display: 'flex',
+            gap:'50px',
+        },
+        contacts:{
+            //width: '25%',
+            textAlign: 'left',
+            color: Colors.white,
+            fontSize: '14px',
+            fontWeight: '300',
+            textWrap:'nowrap',
         },
     })

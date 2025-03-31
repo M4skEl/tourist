@@ -1,6 +1,6 @@
 import BukzaWidget from "@/components/BukzaWidjet";
 import Header from "@/components/Header";
-import MainPhotos from "@/components/MainPhotos";
+//import MainPhotos from "@/components/MainPhotos";
 import MainInfo from "@/components/MainInfo";
 import HeaderImage from "@/components/HeaderImage";
 import Tours from "@/components/Tours";
@@ -14,7 +14,7 @@ export default function Home() {
             <HeaderImage/>
             <Header/>
 
-            <MainPhotos/>
+            {/*<MainPhotos/>*/}
             <MainInfo/>
             <Tours/>
             <Additions/>
