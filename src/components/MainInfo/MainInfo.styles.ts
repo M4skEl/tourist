@@ -47,7 +47,7 @@ export const styles = () =>
             gap: '40px',
             width: '100%',
             marginBottom: '40px',
-            '@media (max-width: 820px)': {
+            '@media (max-width: 1000px)': {
                 flexDirection: 'column',
             },
         },
@@ -55,7 +55,7 @@ export const styles = () =>
             width: '50%',
             display: 'flex',
             gap: '20px',
-            '@media (max-width: 820px)': {
+            '@media (max-width: 1000px)': {
                 width: '100%',
             },
             '@media (max-width: 600px)': {
@@ -71,7 +71,7 @@ export const styles = () =>
                 height: '450px !important',
                 borderRadius: '15px',
             },
-            '@media (max-width: 820px)': {
+            '@media (max-width: 1000px)': {
                 display: 'flex',
                 alignItems: 'center',
             },
@@ -201,7 +201,7 @@ export const styles = () =>
             width: '50%',
             display: 'flex',
             gap: '20px',
-            '@media (max-width: 820px)': {
+            '@media (max-width: 1000px)': {
                 width: '100%',
             },
             '@media (max-width: 600px)': {
@@ -214,7 +214,7 @@ export const styles = () =>
             gap: '40px',
             width: '100%',
             marginBottom: '40px',
-            '@media (max-width: 820px)': {
+            '@media (max-width: 1000px)': {
                 flexDirection: 'column',
             },
             '@media (max-width: 600px)': {

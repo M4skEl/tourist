@@ -39,7 +39,7 @@ export const BurgerMenu = ({onClose}: ModalProps) => {
                    <Box component={'nav'} sx={navigation}>
                        <List sx={navList}>
 
-                           <Link href={'/#info'} style={linkItem}>
+                           <Link href={'/#info'} style={linkItem} onClick={()=>{onClose()}}>
                                <ListItem sx={listItem}>
                                    <Typography component={'span'} sx={linkText}>
                                        {'Почему мы?'}
@@ -47,28 +47,28 @@ export const BurgerMenu = ({onClose}: ModalProps) => {
                                </ListItem>
                            </Link>
 
-                           <Link href={'/#tours'} style={linkItem}>
+                           <Link href={'/#tours'} style={linkItem} onClick={()=>{onClose()}}>
                                <ListItem sx={listItem}>
-                                   <Typography component={'span'} sx={linkText}>
+                                   <Typography component={'span'} sx={linkText} >
                                        {'Маршруты'}
                                    </Typography>
                                </ListItem>
                            </Link>
-                           { <Link href={'/#partnership'} style={linkItem}>
+                           <Link href={'/#partnership'} style={linkItem} onClick={()=>{onClose()}}>
                                <ListItem sx={listItem}>
                                    <Typography component={'span'} sx={linkText}>
                                        {'Партнерам'}
                                    </Typography>
                                </ListItem>
-                           </Link>}
-                           <Link href={'/#contacts'} style={linkItem}>
+                           </Link>
+                           <Link href={'/#contacts'} style={linkItem} onClick={()=>{onClose()}}>
                                <ListItem sx={listItem}>
                                    <Typography component={'span'} sx={linkText}>
                                        {'Контакты'}
                                    </Typography>
                                </ListItem>
                            </Link>
-                           <Link href={'/#booking'} style={linkItem}>
+                           <Link href={'/#booking'} style={linkItem} onClick={()=>{onClose()}}>
                                <ListItem sx={listItem}>
                                    <Typography component={'span'} sx={linkText}>
                                        {'Забронировать'}

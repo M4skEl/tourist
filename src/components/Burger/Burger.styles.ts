@@ -13,13 +13,16 @@ export const styles = () =>
             height: '48px',
             minWidth: '48px',
             minHeight: '48px',
-            display: 'flex',
+
             flexDirection: 'column',
             gap:'4px',
             alignItems: 'center',
             justifyContent: 'center',
             ZIndex: '99999',
-
+            display:'none',
+            '@media (max-width: 768px)': {
+                display: 'flex',
+            },
         },
         row:{
             width: '22px',
