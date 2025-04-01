@@ -31,7 +31,7 @@ const Footer = () => {
 
             <Box sx={contentContainer}>
                 <Box component={'a'} sx={socialLink} href={'https://vk.com/retrospektiva_arh/'} target={'_blank'} rel='noopener noreferrer nofollow'>
-                    <Box component={'img'} style={socialLinkImg} src={'/icons/VK.png'}/>
+                    <Box component={'img'} sx={socialLinkImg} src={'/icons/VK.png'}/>
                 </Box>
 
                 {/*<Box sx={socialsContainer}>
@@ -105,7 +105,7 @@ const Footer = () => {
 
                 </Box>
                 <Box component={'a'} sx={socialLink} href={'https://web.telegram.org/'} rel='noopener noreferrer'>
-                    <Box component={'img'} style={socialLinkImg} src={'/icons/Telegram.png'}/>
+                    <Box component={'img'} sx={socialLinkImg} src={'/icons/Telegram.png'}/>
                 </Box>
             </Box>
 

@@ -78,7 +78,7 @@ const Header = () => {
 
                     <Box sx={descriptionContainer}>
                         <Typography sx={descriptionTitle}>
-                            {'От вокзала до вокзала'}
+                            {'«От вокзала до вокзала»'}
                         </Typography>
                         <Box>
                             <Typography sx={descriptionText}>
@@ -167,7 +167,7 @@ const Header = () => {
 
                     <Box sx={descriptionContainer}>
                         <Typography sx={descriptionTitle}>
-                            {'«Репортаж 1984'}
+                            {'«Репортаж 1984»'}
                         </Typography>
                         <Box>
                             <Typography sx={descriptionText}>

@@ -48,7 +48,12 @@ export const styles = () =>
         socialLinkImg: {
             width: '50px',
             height: '50px',
-
+            '@media (max-width: 500px)': {
+                width: '40px',
+                height: '40px',
+                minWidth:'40px',
+                minHeight:'40px',
+            },
         },
         descriptionContainer: {
             textAlign: 'center',
@@ -117,7 +122,10 @@ export const styles = () =>
 
         GovermentContainer:{
             marginTop: '150px',
-            //maxWidth: '25%',
+            '@media (max-width: 768px)': {
+                maxWidth: '100%',
+            },
+
 
         },
         govermentDescription:{
@@ -126,6 +134,7 @@ export const styles = () =>
             fontSize: '12px',
             fontWeight: '300',
             color: Colors.white,
+
         },
 
         contactsContainer:{
@@ -136,10 +145,18 @@ export const styles = () =>
             //marginTop: '70px',
             //width: '25%',
             marginTop: '30px',
+            '@media (max-width: 650px)': {
+                gap:'5px',
+            },
         },
         contactsRow:{
             display: 'flex',
             gap:'50px',
+            '@media (max-width: 650px)': {
+               flexDirection: 'column',
+                gap:'5px',
+                alignItems: 'center',
+            },
         },
         contacts:{
             //width: '25%',

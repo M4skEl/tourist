@@ -6,6 +6,9 @@ export const styles = () =>
         sectionContainer: {
             margin: '100px 40px 40px',
             color: Colors.dark,
+            '@media (max-width: 768px)': {
+                marginTop: '20px',
+            },
         },
         titleContainer: {
             margin: '0 40px 40px',
@@ -135,6 +138,9 @@ export const styles = () =>
         descriptionTitle: {
             fontSize: '42px',
             fontWeight: '700',
+            '@media (max-width: 500px)': {
+                fontSize: '38px',
+            },
         },
         descriptionText: {
             textIndent: '2rem',
@@ -142,26 +148,43 @@ export const styles = () =>
             paddingRight: '20px',
             fontWeight: '300',
             marginBottom: '20px',
+            '@media (max-width: 650px)': {
+                textIndent: '0',
+                fontSize: '18px',
+            },
         },
         listContainer: {
             display: 'flex',
             flexDirection: 'column',
             gap: '0px',
+            '@media (max-width: 650px)': {
+                gap:'5px',
+            },
         },
         listItem: {
             display: 'flex',
             alignItems: 'flex-end',
             gap: '10px',
+            '@media (max-width: 650px)': {
+                alignItems: 'flex-start',
+            },
         },
         listTextBold: {
             fontSize: '24px',
             fontWeight: '500',
             width: '100%',
             maxWidth: '200px',
+            '@media (max-width: 650px)': {
+                fontSize: '20px',
+                minWidth: '200px',
+            },
         },
         listText: {
             fontSize: '22px',
             fontWeight: '300',
+            '@media (max-width: 650px)': {
+                fontSize: '18px',
+            },
 
         },
     })

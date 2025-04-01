@@ -27,7 +27,11 @@ export const styles = () =>
             lineHeight: '80px',
             marginBottom: '50px',
             '@media (max-width: 768px)': {
-                fontSize: '48px',
+                fontSize: '42px',
+                marginBottom: '0',
+            },
+            '@media (max-width: 415px)': {
+                fontSize: '38px',
                 marginBottom: '0',
             },
         },

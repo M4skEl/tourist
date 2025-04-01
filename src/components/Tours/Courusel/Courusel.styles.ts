@@ -5,30 +5,35 @@ const imageWidthH = 600
 const imageWidth = 450
 const imageHeight = 450
 const imageWidthTablet = 300
-//const imageHeightTablet = 300
+
+const imageHeightTablet = 300
 
 interface stylesProps {
-    images:string[];
+    images: string[];
     currentIndex: number;
 }
 
 export const styles = (
-    {images, currentIndex}:stylesProps
+    {images, currentIndex}: stylesProps
 ) =>
     createStyles({
         mainContainer: {
             overflow: 'hidden',
             position: 'relative',
             height: `${imageHeight}px`,
-            maxWidth:`${imageWidth}px`,
+            maxWidth: `${imageWidth}px`,
             width: `${imageWidth}px`,
             '@media (max-width: 1100px)': {
                 width: `${imageWidthTablet}px`,
-                maxWidth:`${imageWidthTablet}px`,
+                maxWidth: `${imageWidthTablet}px`,
             },
             '@media (max-width: 820px)': {
                 width: `${imageWidthH}px`,
-                maxWidth:`${imageWidthH}px`,
+                maxWidth: `${imageWidthH}px`,
+            },
+            '@media (max-width: 768px)': {
+                width: `100%`,
+                height: `100%`,
             },
         },
         container: {
@@ -50,18 +55,21 @@ export const styles = (
             },
             //height: '100%'
         },
-        imageContainer:{
+        imageContainer: {
             width: '100%',
             margin: 0,
             padding: 0,
         },
-        imageStyles:{
+        imageStyles: {
             width: '100%',
             objectFit: 'cover',
-            maxWidth:`${imageWidth}px`,
+            maxWidth: `${imageWidth}px`,
             '@media (max-width:820px)': {
-                maxWidth:`${imageWidthH}px`,
-                width:`100%`,
+                maxWidth: `${imageWidthH}px`,
+                width: `100%`,
+            },
+            '@media (max-width: 768px)': {
+               maxHeight: `${imageHeightTablet}px`,
             },
         },
     })
