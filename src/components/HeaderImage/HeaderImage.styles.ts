@@ -14,6 +14,8 @@ export const styles = () =>
             backgroundColor: Colors.green,
             color: Colors.dark,
             borderBottom: `2px solid ${Colors.dark}`,
+            zIndex:'999',
+            position: 'relative',
         },
 
         imageContainer: {
