@@ -1,6 +1,6 @@
 'use client'
-import React, {useState} from 'react'
-import {Typography, Box, Button, List, ListItem} from '@mui/material'
+import React from 'react'
+import {Typography, Box,List, ListItem} from '@mui/material'
 import {styles} from "@/components/Burger/BurgerMenu/BurgerMenu.styles";
 import useOutsideClick from "@/utils/useOutsideClick";
 import Link from "next/link";
