@@ -4,7 +4,9 @@ import nodemailer from "nodemailer";
 export async function POST(request) {
   try {
     const data = await request.json();
-
+    console.log('request', data)
+    console.log('env', process.env.YANDEX_USER)
+    console.log('env_2', process.env.YANDEX_PASS)
     const transporter = nodemailer.createTransport({
       host: "smtp.yandex.ru",
       port: 465,
