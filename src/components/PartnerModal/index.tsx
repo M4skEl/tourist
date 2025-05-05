@@ -53,7 +53,7 @@ export const PartnerModal = ({onClose}: ModalProps) => {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)
             });
-
+            console.log('res', response)
             if (response.ok) {
                 setStatus('Ваша заявка принята! Мы свяжемся с вами.');
                 setFormData({ name: '', email: '', phone: '', company: '', comment: '' });
