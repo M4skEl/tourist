@@ -44,6 +44,7 @@ export const PartnerModal = ({onClose}: ModalProps) => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         console.log('formData', formData)
+
         setStatus('Отправка...');
 
         try {

@@ -2,8 +2,10 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(request) {
+  console.log('1')
   try {
     const data = await request.json();
+    console.log('2')
     console.log('request', data)
     console.log('env', process.env.YANDEX_USER)
     console.log('env_2', process.env.YANDEX_PASS)
@@ -16,7 +18,7 @@ export async function POST(request) {
         pass: process.env.YANDEX_PASS,
       },
     });
-
+    console.log('3')
     await transporter.sendMail({
       from: `"Партнёрская заявка" <${process.env.YANDEX_USER}>`,
       to: "siverelieseu7@gmail.com",
@@ -30,9 +32,11 @@ export async function POST(request) {
         <p><strong>Комментарий:</strong> ${data.comment}</p>
       `,
     });
+    console.log('4')
 
     return NextResponse.json({ status: "ok" });
   } catch (error) {
+    console.log('5')
     console.error(error);
     return NextResponse.json(
       { status: "error", message: error.message || "Unknown error" },
