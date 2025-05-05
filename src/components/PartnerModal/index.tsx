@@ -40,11 +40,29 @@ export const PartnerModal = ({onClose}: ModalProps) => {
         company:'',
         comment: ''
     });
-
-    const handleSubmit = (e: React.FormEvent) => {
+    const [status, setStatus] = useState(''); // для обратной связи
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Обработка отправки формы
-        console.log(formData);
+        console.log('formData', formData)
+        setStatus('Отправка...');
+
+        try {
+            const response = await fetch('/api/send-partner-email', {
+                method: 'POST',
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData)
+            });
+
+            if (response.ok) {
+                setStatus('Ваша заявка принята! Мы свяжемся с вами.');
+                setFormData({ name: '', email: '', phone: '', company: '', comment: '' });
+            } else {
+                setStatus('Ошибка. Попробуйте повторить позже.');
+            }
+        } catch {
+            setStatus('Ошибка соединения. Проверьте интернет.');
+        }
+        console.log(status)
     };
 
 
